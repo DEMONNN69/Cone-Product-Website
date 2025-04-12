@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4 transition-all duration-300 hover:scale-105">
-              <Cone className="h-6 w-6 text-primary" />
+              <Cone className="h-6 w-6 text-primary rotate-180" />
               <span className="font-bold text-xl">Suraj Cone Production</span>
             </Link>
             <p className="text-sm text-muted-foreground">
