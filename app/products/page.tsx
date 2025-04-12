@@ -8,76 +8,32 @@ export default function ProductsPage() {
   const products = [
     {
       id: 1,
-      name: "Classic Waffle Cone",
-      description: "Our signature waffle cone with the perfect balance of crispness and chewiness.",
+      name: "Classic Softy Cone",
+      description: "A timeless delight featuring soft-serve ice cream in our classic waffle cone – simple, smooth, and satisfying.",
       image: "/p1.jpeg?height=400&width=400",
       category: "Waffle",
-      sizes: ["Small", "Medium", "Large"],
+      sizes: ["One Size"],
       featured: true,
     },
     {
       id: 2,
-      name: "Sugar Cone",
-      description: "Crispy, sweet, and perfectly pointed for easy eating and less dripping.",
+      name: "Special Super Cone",
+      description: "A jumbo-sized treat packed with rich, creamy layers and extra toppings – made for those who crave more.",
       image: "/p2.jpeg?height=400&width=400",
       category: "Sugar",
-      sizes: ["Small", "Medium", "Large"],
+      sizes: ["One Size"],
       featured: true,
     },
     {
       id: 3,
-      name: "Chocolate-Dipped Waffle Cone",
-      description: "Our classic waffle cone dipped in premium Belgian chocolate.",
+      name: "Sugar Cone",
+      description: "Crunchy and sweet, this classic sugar cone adds the perfect texture to your favorite scoop of ice cream.",
       image: "/p3.jpeg?height=400&width=400",
       category: "Specialty",
-      sizes: ["Medium", "Large"],
+      sizes: ["One Size"],
       featured: false,
     },
-    {
-      id: 4,
-      name: "Pretzel Cone",
-      description: "A sweet and salty pretzel-flavored cone for a unique taste experience.",
-      image: "/p1.jpeg?height=400&width=400",
-      category: "Specialty",
-      sizes: ["Medium", "Large"],
-      featured: false,
-    },
-    {
-      id: 5,
-      name: "Gluten-Free Waffle Cone",
-      description: "All the flavor and texture of our classic waffle cone, but gluten-free.",
-      image: "/p2.jpeg?height=400&width=400",
-      category: "Dietary",
-      sizes: ["Medium", "Large"],
-      featured: true,
-    },
-    {
-      id: 6,
-      name: "Cake Cone",
-      description: "Light, crispy cake cones perfect for soft serve and traditional scoops.",
-      image: "/p3.jpeg?height=400&width=400",
-      category: "Cake",
-      sizes: ["Small", "Medium", "Large"],
-      featured: false,
-    },
-    {
-      id: 7,
-      name: "Cinnamon Waffle Cone",
-      description: "Our classic waffle cone infused with warm cinnamon flavor.",
-      image: "/p1.jpeg?height=400&width=400",
-      category: "Waffle",
-      sizes: ["Medium"],
-      featured: false,
-    },
-    {
-      id: 8,
-      name: "Chocolate Waffle Cone",
-      description: "Rich chocolate-flavored waffle cone for chocolate lovers.",
-      image: "/p2.jpeg?height=400&width=400",
-      category: "Waffle",
-      sizes: ["Medium", "Large"],
-      featured: false,
-    },
+    
   ]
 
   return (
@@ -94,25 +50,12 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Featured Products */}
-      <section className="py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold mb-8 animate-slide-up">Featured Cones</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products
-              .filter((product) => product.featured)
-              .map((product, index) => (
-                <ProductCard key={product.id} product={product} index={index} />
-              ))}
-          </div>
-        </div>
-      </section>
 
       {/* All Products */}
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 animate-slide-up">All Cones</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((product, index) => (
               <ProductCard key={product.id} product={product} index={index} />
             ))}
@@ -133,13 +76,13 @@ export default function ProductsPage() {
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center p-6 text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">Waffle Cones</h3>
-                <p className="text-white/80 mb-4">Our signature waffle cones in various flavors and sizes.</p>
+                <h3 className="text-2xl font-bold text-white mb-2">Softy Cones</h3>
+                <p className="text-white/80 mb-4">Our signature Softy cones in various flavors and sizes.</p>
                 <Button
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+                  className="text-gray-500 border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
-                  Explore Waffle Cones
+                  Explore Softy Cones
                 </Button>
               </div>
             </div>
@@ -156,7 +99,7 @@ export default function ProductsPage() {
                 <p className="text-white/80 mb-4">Crispy, sweet cones perfect for any ice cream flavor.</p>
                 <Button
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+                  className="text-gray-500 border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
                   Discover Sugar Cones
                 </Button>
@@ -175,7 +118,7 @@ export default function ProductsPage() {
                 <p className="text-white/80 mb-4">Unique and innovative cone creations for special occasions.</p>
                 <Button
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
+                  className="text-gray-500 border-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105"
                 >
                   Browse Specialty Cones
                 </Button>
@@ -192,7 +135,7 @@ export default function ProductsPage() {
             <div className="animate-slide-in-left">
               <h2 className="text-3xl font-bold mb-6">Our Cone-Making Process</h2>
               <p className="text-muted-foreground mb-6">
-                At ConeWorks, we combine traditional techniques with modern precision to create the perfect cone every
+                At Suraj Cone Production, we combine traditional techniques with modern precision to create the perfect cone every
                 time.
               </p>
               <div className="space-y-4">
@@ -244,7 +187,7 @@ export default function ProductsPage() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden animate-slide-in-right">
               <Image
-                src="/placeholder.svg?height=800&width=600"
+                src="/image.png?height=400&width=600"
                 alt="Cone manufacturing process"
                 fill
                 className="object-cover"
@@ -286,7 +229,7 @@ export default function ProductsPage() {
               <p className="text-muted-foreground mb-4">
                 Boxes of 12, 24, or 36 cones, perfect for retail stores and small ice cream shops.
               </p>
-              <p className="font-semibold">Starting at $12.99</p>
+              <p className="font-semibold">Contact for pricing</p>
             </div>
 
             <div className="bg-background p-8 rounded-lg text-center hover-lift animate-fade-in animation-delay-400">
@@ -310,7 +253,7 @@ export default function ProductsPage() {
               <p className="text-muted-foreground mb-4">
                 Cases of 200, 500, or 1000 cones for medium to large ice cream shops and restaurants.
               </p>
-              <p className="font-semibold">Starting at $89.99</p>
+              <p className="font-semibold">Contact for pricing</p>
             </div>
 
             <div className="bg-background p-8 rounded-lg text-center hover-lift animate-fade-in animation-delay-500">
@@ -344,25 +287,18 @@ export default function ProductsPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className=" gap-8 items-center">
               <div className="animate-slide-in-left">
                 <h2 className="text-3xl font-bold mb-4">Wholesale Opportunities</h2>
                 <p className="mb-6">
-                  Are you an ice cream shop, cafe, or retailer interested in serving ConeWorks cones? We offer wholesale
+                  Are you an ice cream shop, cafe, or retailer interested in serving Suraj Cone Production cones? We offer wholesale
                   options with competitive pricing and reliable delivery.
                 </p>
                 <Button asChild variant="secondary" className="hover-lift">
                   <Link href="/contact">Contact Our Sales Team</Link>
                 </Button>
               </div>
-              <div className="relative h-64 md:h-80 rounded-lg overflow-hidden animate-slide-in-right">
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Wholesale cones"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              
             </div>
           </div>
         </div>
@@ -372,7 +308,7 @@ export default function ProductsPage() {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6 animate-slide-up">Ready to Order ConeWorks Cones?</h2>
+            <h2 className="text-3xl font-bold mb-6 animate-slide-up">Ready to Order Suraj Cone Production Cones?</h2>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-in animation-delay-200">
               Contact us today to place an order or request samples of our premium cones.
             </p>

@@ -9,10 +9,10 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4 transition-all duration-300 hover:scale-105">
               <Cone className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl">ConeWorks</span>
+              <span className="font-bold text-xl">Suraj Cone Production</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Crafting premium ice cream cones since 1989. Made with the finest ingredients and traditional techniques.
+              Crafting premium ice cream cones since 1997. Made with the finest ingredients and traditional techniques.
             </p>
           </div>
 
@@ -62,12 +62,13 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-muted-foreground">
-                123 Cone Way
+                D-22
                 <br />
-                Waffle Hills, CA 94123
+    Industrial Area Kalyan East
               </li>
-              <li className="text-sm text-muted-foreground">info@coneworks.com</li>
-              <li className="text-sm text-muted-foreground">(555) 123-4567</li>
+              <li className="text-sm text-muted-foreground">surajcone22@gmail.com</li>
+              <li className="text-sm text-muted-foreground">+91 7900074083
+              </li>
             </ul>
           </div>
 
@@ -112,7 +113,7 @@ export default function Footer() {
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} ConeWorks. All rights reserved.
+            &copy; {new Date().getFullYear()} Suraj Cone Production. All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="text-xs text-muted-foreground hover:text-primary transition-colors">

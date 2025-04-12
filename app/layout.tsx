@@ -8,9 +8,9 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "ConeWorks | Premium Ice Cream Cone Manufacturer",
+  title: "Suraj Cone Production  | Premium Ice Cream Cone Manufacturer",
   description:
-    "Crafting premium ice cream cones since 1989. Explore our delicious range of waffle, sugar, and specialty cones.",
+    "Crafting premium ice cream cones since 1997. Explore our delicious range of waffle, sugar, and specialty cones.",
     generator: 'v0.dev'
 }
 

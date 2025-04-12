@@ -25,9 +25,53 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+
+      // Send form data to Google Sheets via the Apps Script URL
+  const formPayload = new FormData();
+  formPayload.append("name", formData.name);
+  formPayload.append("email", formData.email);
+  formPayload.append("subject", formData.subject);
+  formPayload.append("message", formData.message);
+
+  try {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbxq4uzqyd595nXHYWzk22s97-TTQMLcsSeaZBgZZOzSarCFYqm-_SwNuGD0DLIraeU/exec', {
+      method: 'POST',
+      body: formPayload,
+    });
+
+    if (response.ok) {
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+
+      // Reset the form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+    } else {
+      alert("Submission failed.");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    alert("An error occurred while submitting the form.");
+  }
+
+    const { name, email, subject, message } = formData
+
+    const whatsappMessage = `Hello, my name is ${name}.\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
+    const phoneNumber = '919082922321'
+
+    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`, '_blank')
 
     // Simulate form submission
     setTimeout(() => {
@@ -146,11 +190,11 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Our Location</h3>
                     <p className="text-muted-foreground">
-                      123 Cone Way
+                    D -22
                       <br />
-                      Waffle Hills, CA 94123
+                      Industrial area
                       <br />
-                      United States
+                      Kalyan East
                     </p>
                   </div>
                 </div>
@@ -160,9 +204,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
                     <p className="text-muted-foreground">
-                      Main Office: (555) 123-4567
-                      <br />
-                      Customer Service: (555) 765-4321
+                      Main Office :7900074083
+
                     </p>
                   </div>
                 </div>
@@ -172,11 +215,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-muted-foreground">
-                      General Inquiries: info@coneworks.com
+                      General Inquiries: surajyadav22@gmail.com
                       <br />
-                      Customer Support: support@coneworks.com
-                      <br />
-                      Wholesale: wholesale@coneworks.com
                     </p>
                   </div>
                 </div>
@@ -186,11 +226,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Business Hours</h3>
                     <p className="text-muted-foreground">
-                      Monday - Friday: 9:00 AM - 5:00 PM
-                      <br />
-                      Saturday: 10:00 AM - 3:00 PM
-                      <br />
-                      Sunday: Closed
+                      Everyday : 10:00 AM - 10:00 PM
                     </p>
                   </div>
                 </div>
@@ -243,7 +279,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold mb-8 text-center animate-slide-up">Find Us</h2>
           <div className="h-96 bg-muted rounded-lg overflow-hidden animate-scale animation-delay-200">
-            {/* Placeholder for map */}
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60271.513407290484!2d73.08934375005255!3d19.240157141382777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be796f457b1b76f%3A0x35df463ca445bd26!2sKalyan%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1744454889961!5m2!1sen!2sin" className="object-cover w-full h-full" loading="lazy"></iframe>
             <div className="w-full h-full flex items-center justify-center bg-muted">
               <p className="text-muted-foreground">Interactive Map Would Be Displayed Here</p>
             </div>
@@ -259,7 +295,7 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="bg-muted/30 p-6 rounded-lg hover-lift animate-fade-in animation-delay-200">
-                <h3 className="text-lg font-semibold mb-2">Where can I buy ConeWorks cones?</h3>
+                <h3 className="text-lg font-semibold mb-2">Where can I buy Suraj Cone Production cones?</h3>
                 <p className="text-muted-foreground">
                   Our cones are available through wholesale distribution to ice cream shops, restaurants, and specialty
                   food stores. For retail customers, we offer smaller packages through select gourmet food retailers.

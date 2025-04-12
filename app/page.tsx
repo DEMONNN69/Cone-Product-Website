@@ -20,10 +20,10 @@ export default function Home() {
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in">
-              Crafting Perfect Cones Since 1989
+              Crafting Perfect Cones Since 1997
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in animation-delay-200">
-              Artisanal waffle, sugar, and specialty cones made with the finest ingredients and traditional techniques.
+              Softy Cones, sugar, and specialty cones made with the finest ingredients and traditional techniques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in animation-delay-400">
               <Button asChild size="lg" className="group hover-lift">
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="py-20 bg-muted/50 dark:bg-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Why Choose ConeWorks?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Why Choose Suraj Cone Production?</h2>
             <div className="w-24 h-1 bg-primary mx-auto animate-scale animation-delay-200"></div>
           </div>
 
@@ -138,133 +138,56 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-300">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-primary font-bold">JD</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Jane Doe</h4>
-                  <p className="text-sm text-muted-foreground">Ice Cream Shop Owner</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                "The waffle cones from ConeWorks are simply the best I've ever used in my shop. My customers rave about
-                the texture and flavor. They're the perfect complement to our premium ice cream."
-              </p>
-            </div>
+  <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-300">
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+        <span className="text-primary font-bold">RK</span>
+      </div>
+      <div>
+        <h4 className="font-semibold">Rina Kapoor</h4>
+        <p className="text-sm text-muted-foreground">Café Owner – Delhi</p>
+      </div>
+    </div>
+    <p className="text-muted-foreground">
+      "Suraj Cone Production's cones add a premium feel to our sundaes. My customers love the crispy texture and light sweetness – perfect for Indian palettes!"
+    </p>
+  </div>
 
-            <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-400">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-primary font-bold">JS</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold">John Smith</h4>
-                  <p className="text-sm text-muted-foreground">Restaurant Owner</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                "We've been serving ConeWorks cones in our restaurant for over 5 years. They're consistently excellent,
-                and the company is a pleasure to work with. Their specialty chocolate-dipped cones are a customer
-                favorite."
-              </p>
-            </div>
+  <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-400">
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+        <span className="text-primary font-bold">AK</span>
+      </div>
+      <div>
+        <h4 className="font-semibold">Amit Khanna</h4>
+        <p className="text-sm text-muted-foreground">Dessert Parlour Owner – Mumbai</p>
+      </div>
+    </div>
+    <p className="text-muted-foreground">
+      "We've been sourcing cones from Suraj Cone for years. Their quality is top-notch, and their chocolate-dipped cones are an absolute hit during summer."
+    </p>
+  </div>
 
-            <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-500">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-primary font-bold">AJ</span>
-                </div>
-                <div>
-                  <h4 className="font-semibold">Amy Johnson</h4>
-                  <p className="text-sm text-muted-foreground">Food Blogger</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                "The attention to detail and commitment to quality at ConeWorks is evident in every bite. Their
-                gluten-free options are a game-changer for those with dietary restrictions who still want to enjoy a
-                delicious cone!"
-              </p>
-            </div>
-          </div>
+  <div className="bg-muted/30 p-8 rounded-lg hover-lift animate-fade-in animation-delay-500">
+    <div className="flex items-center mb-4">
+      <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+        <span className="text-primary font-bold">NS</span>
+      </div>
+      <div>
+        <h4 className="font-semibold">Neha Shah</h4>
+        <p className="text-sm text-muted-foreground">Food Influencer – Ahmedabad</p>
+      </div>
+    </div>
+    <p className="text-muted-foreground">
+      "Tried their cones during a tasting event – absolutely delicious! Their innovative flavours and gluten-free options make them stand out in the market."
+    </p>
+  </div>
+</div>
+
         </div>
       </section>
 
-      {/* Product Showcase */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Our Featured Cones</h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto animate-fade-in animation-delay-200">
-              Discover our most popular cone varieties, crafted with care and precision for the perfect ice cream
-              experience.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-300">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/p1.jpeg?height=400&width=400"
-                  alt="Classic Waffle Cone"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Classic Waffle Cone</h3>
-                <p className="text-muted-foreground mb-4">
-                  Our signature waffle cone with the perfect balance of crispness and chewiness.
-                </p>
-                <Button asChild className="w-full hover-lift">
-                  <Link href="/products">Learn More</Link>
-                </Button>
-              </div>
-            </div>
-
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-400">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/p2.jpeg?height=400&width=400"
-                  alt="Sugar Cone"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Sugar Cone</h3>
-                <p className="text-muted-foreground mb-4">
-                  Crispy, sweet, and perfectly pointed for easy eating and less dripping.
-                </p>
-                <Button asChild className="w-full hover-lift">
-                  <Link href="/products">Learn More</Link>
-                </Button>
-              </div>
-            </div>
-
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-500">
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src="/p3.jpeg?height=400&width=400"
-                  alt="Chocolate-Dipped Cone"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Chocolate-Dipped Cone</h3>
-                <p className="text-muted-foreground mb-4">
-                  Our classic waffle cone dipped in premium Belgian chocolate for an extra indulgent treat.
-                </p>
-                <Button asChild className="w-full hover-lift">
-                  <Link href="/products">Learn More</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">

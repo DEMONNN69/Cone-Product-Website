@@ -11,7 +11,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6 animate-slide-up">Our Story</h1>
             <p className="text-xl text-muted-foreground animate-fade-in animation-delay-200">
-              From a small family bakery to a leading cone manufacturer, discover the journey of ConeWorks.
+              From a small family bakery to a leading cone manufacturer, discover the journey of Suraj Cone Production.
             </p>
           </div>
         </div>
@@ -22,25 +22,21 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
-              <h2 className="text-3xl font-bold mb-6">Our Legacy Since 1989</h2>
+              <h2 className="text-3xl font-bold mb-6">Our Legacy Since 1997</h2>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  ConeWorks began in 1989 when Maria and Robert Johnson started making waffle cones in their family
-                  bakery. Using recipes passed down through generations, they created crispy, flavorful cones that
-                  quickly became popular among local ice cream shops.
+                Suraj Cone Production is a Mumbai-based manufacturer specializing in high-quality ice cream cones. Situated in Ulhasnagar, we are dedicated to delivering premium sugar cones that meet the diverse needs of our clients across India.
                 </p>
                 <p>
-                  As demand grew, the Johnsons opened their first small production facility in 1992. They remained
-                  committed to using only the finest ingredients and traditional methods, refusing to compromise on
-                  quality even as they expanded.
+                Our commitment to excellence is evident in our product offerings, which are crafted to ensure optimal taste and texture. With a focus on quality and customer satisfaction, we strive to provide products that enhance the ice cream experience for both businesses and consumers.
                 </p>
                 <p>
-                  Today, ConeWorks has grown into a respected manufacturer, but we still make our cones in small batches
-                  using the same care and attention to detail that Maria and Robert established over three decades ago.
+                At Suraj Cone Production, we understand the importance of reliable supply and timely delivery. Our efficient production processes and logistics ensure that we can meet bulk orders promptly, maintaining the highest standards of service.
                 </p>
                 <p>
-                  Our commitment to quality, innovation, and sustainability has made us a leader in the premium ice
-                  cream cone market, but we've never forgotten our humble beginnings and the values that got us here.
+                We take pride in our role within the confectionery industry and are continually working to innovate and improve our products. Whether you're a small business or a large enterprise, Suraj Cone Production is your trusted partner for quality ice cream cones.​
+
+
                 </p>
               </div>
               <div className="mt-8">
@@ -52,7 +48,7 @@ export default function AboutPage() {
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl animate-slide-in-right">
               <Image
                 src="/bg2.jpeg?height=1000&width=800"
-                alt="Founders of ConeWorks"
+                alt="Founders of Suraj Cone Production"
                 fill
                 className="object-cover"
               />
@@ -67,7 +63,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Our Values</h2>
             <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              The principles that guide everything we do at ConeWorks.
+              The principles that guide everything we do at Suraj Cone Production.
             </p>
           </div>
 
@@ -229,88 +225,26 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Meet Our Team</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 animate-slide-up">Meet the Owner</h2>
             <p className="text-muted-foreground animate-fade-in animation-delay-200">
-              The passionate people behind ConeWorks.
+              The passionate people behind Suraj Cone Production.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="w-1/3 mx-auto mb-8 animate-fade-in animation-delay-100">
             <div className="bg-background rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in animation-delay-300">
-              <div className="relative h-80">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Team member"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-105"
-                />
-              </div>
+              
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Emily Johnson</h3>
-                <p className="text-sm text-muted-foreground mb-3">CEO & Co-Founder</p>
+                <h3 className="text-xl text-center font-semibold mb-1">Suraj Yadav</h3>
+                <p className="text-sm text-center text-muted-foreground mb-3">CEO & Co-Founder</p>
                 <p className="text-muted-foreground text-sm">
-                  Daughter of the original founders, Emily has been involved in the business since childhood and now
+                  Son of the original founders, Suraj has been involved in the business since childhood and now
                   leads the company with the same passion for quality.
                 </p>
               </div>
             </div>
 
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in animation-delay-400">
-              <div className="relative h-80">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Team member"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Michael Chen</h3>
-                <p className="text-sm text-muted-foreground mb-3">Head of Production</p>
-                <p className="text-muted-foreground text-sm">
-                  With over 15 years of experience in bakery production, Michael ensures every batch of cones meets our
-                  exacting standards.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in animation-delay-500">
-              <div className="relative h-80">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Team member"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Sofia Rodriguez</h3>
-                <p className="text-sm text-muted-foreground mb-3">Flavor Development Chef</p>
-                <p className="text-muted-foreground text-sm">
-                  A trained pastry chef with a creative flair, Sofia is responsible for developing our innovative and
-                  delicious cone flavors.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-background rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in animation-delay-600">
-              <div className="relative h-80">
-                <Image
-                  src="/placeholder.svg?height=400&width=300"
-                  alt="Team member"
-                  fill
-                  className="object-cover transition-all duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">David Williams</h3>
-                <p className="text-sm text-muted-foreground mb-3">Sustainability Director</p>
-                <p className="text-muted-foreground text-sm">
-                  David leads our efforts to minimize environmental impact and implement sustainable practices
-                  throughout our operations.
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -319,7 +253,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">Join the ConeWorks Family</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-slide-up">Join the Suraj Cone Production Family</h2>
             <p className="text-xl text-muted-foreground mb-8 animate-fade-in animation-delay-200">
               We're always looking for passionate people to join our team. Check out our current openings or contact us
               to learn more.
