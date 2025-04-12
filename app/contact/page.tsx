@@ -45,6 +45,7 @@ export default function ContactPage() {
     });
 
     if (response.ok) {
+      setIsRedirecting(true)
       setIsSubmitting(false);
       setIsSubmitted(true);
 
@@ -59,6 +60,7 @@ export default function ContactPage() {
       // Reset success message after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false);
+        setIsRedirecting(false)
       }, 5000);
     } else {
       alert("Submission failed.");
@@ -69,7 +71,7 @@ export default function ContactPage() {
   }
 
     const { name, email, subject, message } = formData
-    setIsRedirecting(true)
+    
 
 
     const whatsappMessage = `Hello, my name is ${name}.\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
@@ -181,13 +183,18 @@ export default function ContactPage() {
                 <Button type="submit" className="w-full hover-lift" disabled={isSubmitting}>
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
+                
               </form>
-
+              <p className="text-sm text-muted-foreground mt-2 text-gray-900 dark:text-white text-center opacity-70">Note: You will be redirected to WhatsApp</p>
               {isRedirecting && (
-  <div className=" mt-4 text-center text-green-600 font-medium animate-pulse">
-    Redirecting to WhatsApp...
+  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+    <div className="bg-white rounded-xl shadow-lg p-6 w-72 text-center animate-fade-in">
+      <p className="text-lg font-semibold text-gray-800 mb-2">Redirecting to WhatsApp</p>
+      <p className="text-sm text-gray-500">Please wait while we open the app...</p>
+    </div>
   </div>
 )}
+
 
             </div>
 

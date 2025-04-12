@@ -187,7 +187,7 @@ export default function Home() {
         </div>
       </section>
 
-        
+
 
       {/* CTA Section */}
       <section className="py-20 bg-primary text-primary-foreground">
@@ -205,8 +205,8 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              variant="outline"
-              className="border-primary-foreground/20 hover:bg-primary-foreground/10 hover-lift"
+              variant="ghost"
+              className="border-primary-foreground/20 hover:bg-primary-foreground/10 hover-lift border-2"
             >
               <Link href="/contact">Contact Us</Link>
             </Button>
