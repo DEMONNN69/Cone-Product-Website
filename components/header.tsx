@@ -61,7 +61,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2 transition-all duration-300 hover:scale-105">
             <Cone className="h-6 w-6 text-primary rotate-180" />
-            <span className="font-bold text-xl">Suraj Cone Production</span>
+            <span className="font-bold text-md lg:text-xl">Suraj Cone Production</span>
           </Link>
         </div>
 
