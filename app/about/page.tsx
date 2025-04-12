@@ -231,7 +231,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="w-1/3 mx-auto mb-8 animate-fade-in animation-delay-100">
+          <div className="w-1/2 lg:w-1/3 mx-auto mb-8 animate-fade-in animation-delay-100">
             <div className="bg-background rounded-lg overflow-hidden shadow-sm hover-lift animate-fade-in animation-delay-300">
               
               <div className="p-6">
