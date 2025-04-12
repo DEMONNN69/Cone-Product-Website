@@ -30,6 +30,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setIsRedirecting(true)
 
       // Send form data to Google Sheets via the Apps Script URL
   const formPayload = new FormData();
@@ -45,7 +46,7 @@ export default function ContactPage() {
     });
 
     if (response.ok) {
-      setIsRedirecting(true)
+      
       setIsSubmitting(false);
       setIsSubmitted(true);
 
