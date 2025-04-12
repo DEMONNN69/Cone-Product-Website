@@ -19,6 +19,8 @@ export default function ContactPage() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isRedirecting, setIsRedirecting] = useState(false)
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -67,6 +69,8 @@ export default function ContactPage() {
   }
 
     const { name, email, subject, message } = formData
+    setIsRedirecting(true)
+
 
     const whatsappMessage = `Hello, my name is ${name}.\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
     const phoneNumber = '919082922321'
@@ -178,6 +182,13 @@ export default function ContactPage() {
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
+
+              {isRedirecting && (
+  <div className=" mt-4 text-center text-green-600 font-medium animate-pulse">
+    Redirecting to WhatsApp...
+  </div>
+)}
+
             </div>
 
             {/* Contact Information */}
