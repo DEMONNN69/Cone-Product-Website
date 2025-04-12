@@ -15,6 +15,7 @@ export default function ContactPage() {
     email: "",
     subject: "",
     message: "",
+    phone: "",
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -26,7 +27,16 @@ export default function ContactPage() {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
+  const timestamp = new Date().toLocaleString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
 
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
@@ -38,9 +48,11 @@ export default function ContactPage() {
   formPayload.append("email", formData.email);
   formPayload.append("subject", formData.subject);
   formPayload.append("message", formData.message);
-
+  formPayload.append("phone", formData.phone);
+  formPayload.append("timestamp",timestamp);
+  
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbxq4uzqyd595nXHYWzk22s97-TTQMLcsSeaZBgZZOzSarCFYqm-_SwNuGD0DLIraeU/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwTDi2znu-96_KNQ3h0r2rHiXtj5VpQeg-t5FULmcbfdkarWyiI2OLvgrfTrJZwt6Lu/exec', {
       method: 'POST',
       body: formPayload,
     });
@@ -56,6 +68,7 @@ export default function ContactPage() {
         email: '',
         subject: '',
         message: '',
+        phone:'',
       });
 
       // Reset success message after 5 seconds
@@ -71,7 +84,7 @@ export default function ContactPage() {
     alert("An error occurred while submitting the form.");
   }
 
-    const { name, email, subject, message } = formData
+    const { name, email, subject, message, phone } = formData
     
 
 
@@ -89,6 +102,7 @@ export default function ContactPage() {
         email: "",
         subject: "",
         message: "",
+        phone: "",
       })
 
       // Reset success message after 5 seconds
@@ -134,7 +148,7 @@ export default function ContactPage() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="Aman Sharma"
+                    placeholder="eg: Aman Sharma"
                     required
                     className="focus-visible:ring-primary transition-all duration-300"
                   />
@@ -148,11 +162,25 @@ export default function ContactPage() {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="aman@gmail.com"
+                    placeholder="eg: aman@gmail.com"
                     required
                     className="focus-visible:ring-primary transition-all duration-300"
                   />
                 </div>
+                <div className="space-y-2">
+  <Label htmlFor="phone">Phone Number</Label>
+  <Input
+    id="phone"
+    name="phone"
+    type="tel"
+    value={formData.phone}
+    onChange={handleChange}
+    placeholder="+91 9876543210"
+    required
+    className="focus-visible:ring-primary transition-all duration-300"
+/>
+</div>
+
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>

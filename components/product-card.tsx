@@ -56,7 +56,7 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
         <div className="flex items-center justify-between">
           <div className="text-xs text-muted-foreground">Available in: {product.sizes.join(", ")}</div>
           <Button asChild size="sm" className="transition-all duration-300 hover:scale-105">
-            <Link href={`/products/${product.id}`}>View</Link>
+            <Link href={`/contact`}>Get</Link>
           </Button>
         </div>
       </div>
