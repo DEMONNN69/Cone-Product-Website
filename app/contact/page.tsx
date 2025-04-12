@@ -134,7 +134,7 @@ export default function ContactPage() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    placeholder="John Doe"
+                    placeholder="Aman Sharma"
                     required
                     className="focus-visible:ring-primary transition-all duration-300"
                   />
@@ -148,7 +148,7 @@ export default function ContactPage() {
                     type="email"
                     value={formData.email}
                     onChange={handleChange}
-                    placeholder="john@example.com"
+                    placeholder="aman@gmail.com"
                     required
                     className="focus-visible:ring-primary transition-all duration-300"
                   />
