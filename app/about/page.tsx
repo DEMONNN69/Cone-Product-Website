@@ -51,7 +51,7 @@ export default function AboutPage() {
             </div>
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl animate-slide-in-right">
               <Image
-                src="/placeholder.svg?height=1000&width=800"
+                src="/bg2.jpeg?height=1000&width=800"
                 alt="Founders of ConeWorks"
                 fill
                 className="object-cover"
@@ -215,7 +215,7 @@ export default function AboutPage() {
             </div>
             <div className="order-1 md:order-2 relative h-[600px] rounded-lg overflow-hidden shadow-xl animate-slide-in-right">
               <Image
-                src="/placeholder.svg?height=1200&width=800"
+                src="/bg3.jpeg?height=1200&width=800"
                 alt="Cone production process"
                 fill
                 className="object-cover"

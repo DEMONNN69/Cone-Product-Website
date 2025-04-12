@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative h-[90vh] flex items-center">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/bg1.jpeg?height=1080&width=1920"
             alt="Cone manufacturing facility"
             fill
             className="object-cover brightness-[0.7] dark:brightness-[0.5]"
@@ -206,7 +206,7 @@ export default function Home() {
             <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-300">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/p1.jpeg?height=400&width=400"
                   alt="Classic Waffle Cone"
                   fill
                   className="object-cover transition-all duration-500 group-hover:scale-110"
@@ -226,7 +226,7 @@ export default function Home() {
             <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-400">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/p2.jpeg?height=400&width=400"
                   alt="Sugar Cone"
                   fill
                   className="object-cover transition-all duration-500 group-hover:scale-110"
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="bg-background rounded-lg overflow-hidden shadow-sm group animate-fade-in animation-delay-500">
               <div className="relative h-64 overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/p3.jpeg?height=400&width=400"
                   alt="Chocolate-Dipped Cone"
                   fill
                   className="object-cover transition-all duration-500 group-hover:scale-110"
